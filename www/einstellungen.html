@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+		<meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">	
+        <link rel="stylesheet" type="text/css" href="css/einstellungen.css">  
+        <link rel="stylesheet" type="text/css" href="css/standard.css">  
+		<script type="text/javascript" src="js/jquery.min.js"></script>     
+        <title>Blackbox</title>
+    </head>
+	
+	<body>
+	    <div id="topBar">
+			<img src="img/logo.png" alt="logo"></img>
+			<h1 id="titel">Blackbox</h1>
+			<a href="index.html"><img src="img/back.png" alt="settings"></a></img>
+		</div>
+		
+		<div id="content">			
+			<div id="steigungOptions">
+				<h1 style="display:inline">Max. Steigung</h1>
+				<input style="display:inline" id="maxSteigungSlider" type="range" name="speed" step="1" value="10" min="5" max="20"></input>
+				<p style="display:inline" id="maxSteigungValue"></p>
+			</div>
+			
+			<div id="speedOptions">
+				<h1 style="display:inline">Max. Speed</h1>
+				<input style="display:inline" id="maxSpeedSlider" type="range" name="speed" step="5" value="50" min="10" max="300"></input>
+				<p style="display:inline" id="maxSpeedValue"></p>
+			</div>
+			
+			<div id="mapOptions">
+				<h1 style="display:inline">Karte anzeigen</h1>
+				<input style="display:inline" id="showMap" type="checkbox" name="showMap" checked="true" value="1"></input>
+			</div>
+		
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/einstellungen.js"></script>
+    </body>
+	
+</html>

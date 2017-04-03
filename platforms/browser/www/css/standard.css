@@ -1,0 +1,125 @@
+/* Allgemeine Angaben zur Schrift und zum Aussehen des Dokuments */
+@font-face {
+	font-family: 'myFont';
+	src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'myFont';
+	src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+html {
+	height:100%;
+	overflow: hidden;
+}
+
+body {
+	font-family: myFont;
+	overflow: hidden;
+	margin: 0px;
+	overflow: hidden;
+	width: 100%;
+	height:100%;
+}
+
+
+
+/* Design für die oberste Leiste mit dem Schriftzug "Fluginstrumente" und dem Zahnrad Icon */
+#topBar  {
+	background-color: #8eb1c7;	
+	height: 65px;
+	margin:0px;
+	width: 100%;
+}
+
+#topBar h1 {
+	margin: 15px 0px 0px 0px;
+	float:left;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#topBar a img {
+	float:right;
+	width:30px;
+	height:30px;
+	margin: 12px 15px 0px 0px;
+}
+
+#topBar a img:hover {
+	width:34px;
+	height:34px;
+	margin-top:10px;
+	margin-bottom:11px;
+}
+
+#topBar img {
+	float:left;
+	width:50px;
+	height:50px;
+	margin: 2px 0px 0px 10px;
+}
+
+
+/* Angaben zur Navigationsleiste */
+#navBar {
+	width:100%;
+	margin: 0px;   
+	height:30px;
+	background-color: #8eb1c7;
+	clear:both;
+}
+
+ul {
+	width:100%;
+	margin: 0px;  
+	height:30px;  
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+	list-style: none;
+}
+
+li {
+	float:left;
+	background-color: #8eb1c7;
+	margin: 0px;    
+	padding: 0px;
+	line-height: 30px;
+	width: 25%;
+    text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	color:white;
+	font-weight:bold;	
+    border-bottom: #8eb1c7 5px solid;
+}
+
+li.clickable:hover {
+	background-color: #9fc7e0;
+	border-bottom: 5px solid #9fc7e0;
+	color:white;
+	font-weight:bold;	
+}
+
+li.clicked {
+	background-color: #8eb1c7;
+	border-bottom: #f55d3e 5px solid;
+	color: #f55d3e; 
+	font-weight: bold;
+}
+
+
+
+/* Angaben zum Content */
+#content{
+	overflow: hidden;
+	width:100%;
+	box-shadow: inset 0px 2px 20px 0px rgba(0,0,0,0.27);
+}

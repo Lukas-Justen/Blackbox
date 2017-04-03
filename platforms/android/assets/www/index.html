@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+		<meta name="format-detection" content="telephone=no">
+		<meta charset="utf-8"/>
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">	
+        <link rel="stylesheet" type="text/css" href="css/standard.css">  
+        <link rel="stylesheet" type="text/css" href="css/index.css">  
+		<script type="text/javascript" src="js/jquery.min.js"></script>     
+        <title>Blackbox</title>
+    </head>
+	
+	<body>
+	    <div id="topBar">
+			<img src="img/logo.png" alt="logo"></img>
+			<h1 id="titel">Blackbox</h1>
+			<a href="einstellungen.html" id="einstellungen"><img src="img/settings.png" alt="settings"></a></img>
+		</div>
+		
+		<div id="navBar">
+			<ul>
+				<li class="clicked">Kompass</li>
+				<li class="clickable">Steigung</li>
+				<li class="clickable">Speed</li>
+				<li class="clickable">Karte</li>
+			</ul>
+		</div>
+				
+		<div id="content">
+		</div>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5W-azG7r2DQSRzim4SnBDeEK-AQFwAX8" async defer></script>
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/kompass.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/steigung.js"></script>
+		<script type="text/javascript" src="js/speed.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+    </body>
+	
+</html>
